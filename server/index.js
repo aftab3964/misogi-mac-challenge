@@ -18,6 +18,15 @@ mongoose.connect(process.env.MONGO_URI)
   .then(() => console.log("MongoDB connected"))
   .catch(err => console.error("DB connection error:", err));
 
+
+
+const pdfRoutes = require('./routes/pdf');
+app.use('/api/pdf', pdfRoutes);
+
+const queryRoutes = require('./routes/query');
+app.use('/api/query', queryRoutes);
+
+
 app.get("/", (req, res) => {
   res.send("✅ Backend is running");
 });

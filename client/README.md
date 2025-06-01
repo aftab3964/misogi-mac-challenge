@@ -68,3 +68,38 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+## Features
+
+- Upload and chat with PDF documents
+- Modern UI with loading spinners and error handling
+- PDF preview (filename, size, or first page)
+- Q&A history for the current session
+- Answer highlighting with source chunk(s) from the PDF
+- Multi-PDF support: upload and query multiple PDFs per session
+- User-friendly error messages for upload/processing issues
+- Copy answer to clipboard button
+- Clear chat/reset button
+- Dark mode toggle
+- File type validation (PDF only)
+
+## Limitations
+
+- Q&A history is stored in-memory (not persistent)
+- Only supports text-based PDFs
+- Limited to single user/session (unless backend extended)
+- Source highlighting may not be perfect for all PDFs
+
+## How it works
+
+![How it works diagram](./how-it-works.png)
+
+1. User uploads one or more PDF files.
+2. PDFs are chunked and indexed for retrieval.
+3. User asks a question; the system finds relevant chunks and generates an answer.
+4. The answer and source chunks are displayed, with relevant text highlighted.
+
+## Screenshots
+
+![App Screenshot](./screenshot.png)
+![Chat Example](./chat-example.gif)
