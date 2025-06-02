@@ -21,7 +21,7 @@ A full-stack AI-powered chatbot that lets you upload a PDF and ask questions abo
 - **PDF Parsing:** pdf-parse
 - **Embeddings:** @xenova/transformers (MiniLM)
 - **Vector DB:** ChromaDB
-- **LLM:** Ollama (Gemma 2B)
+- **LLM:** Ollama (Gemma 7B)
 - **OCR (optional):** tesseract.js (for scanned PDFs)
 
 ---
